@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>News Feed</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/icons/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/util.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="stylesheet" type="text/css" href="fonts/fontawesome-5.0.8/css/fontawesome-all.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.10/ngStorage.min.js"></script>
+
+	<script src="javascripts/app.js"></script>
+	<script src="javascripts/app.routes.js"></script>
+	<script src="javascripts/home/controller.js"></script>
+</head>
+
+<body ng-app="news" class="animsition">
+	<!-- Header -->
+	<header>
+		<div class="wrap-header-mobile">
+			<!-- Logo moblie -->
+			<div class="logo-mobile">
+				<a><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
+			</div>
+		</div>
+		<div class="wrap-logo container">
+			<!-- Logo desktop -->
+			<div class="logo">
+				<a><img src="images/icons/logo-01.png" alt="LOGO"></a>
+			</div>
+		</div>
+		<section class="bg0 push-t-40">
+			<div class="container">
+				<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href ui-sref="home" ui-sref-active='active'>Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href ui-sref="general" ui-sref-active="active">General</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href ui-sref="business" ui-sref-active="active">Business</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href ui-sref="entertainment" ui-sref-active="active">Entertainment</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href ui-sref="health" ui-sref-active="active">Health</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href ui-sref="science" ui-sref-active="active">Science</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href ui-sref="technology" ui-sref-active="active">Technology</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href ui-sref="sports" ui-sref-active="active">Sports</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		</div>
+	</header>
+	<br>
+	<ui-view></ui-view>
+	<br>
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<span class="fas fa-angle-up"></span>
+		</span>
+	</div>
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>

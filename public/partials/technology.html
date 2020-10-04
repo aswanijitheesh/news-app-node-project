@@ -1,0 +1,35 @@
+<section class="bg0 push-t-40">
+    <div class="container">
+        <div class="row m-rl--1">
+            <div class="col-sm-12" ng-if="loader">
+                <div class="loader05"></div>
+            </div>
+            <div class="col-sm-4 p-r-25 p-r-15-sr991" ng-repeat="item in technology" ng-if="item.urlToImage">
+                <a href="" ng-click="readNews(item)">
+                    <div class="m-b-30">
+                        <div class="bg-img1 size-a-4 how1 pos-relative"
+                            style="background-image: url({{item.urlToImage}});">
+                        </div>
+                        <div class="p-t-5">
+                            <span class="f1-s-3">
+                                {{item.publishedAt | date}}
+                            </span>
+                        </div>
+                        <div class="p-t-10">
+                            <div class="p-b-5">
+                                <div class="f1-m-2 cl2 trans-03" style="color: black">
+                                    {{item.title}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-b-5">
+                            <div style="color: black" class=" f4-m-5 cl2 trans-03">
+                                {{item.description}}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
